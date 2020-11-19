@@ -44,7 +44,7 @@
 	 font-size: 26px;
 	 margin: 0;
 	 font-weight: 400;
-	 color: #55311c;
+	 color: #010c3a;
 }
  .modal-desc {
 	 margin: 6px 0 30px 0;
@@ -58,7 +58,7 @@
 	 opacity: 0;
 }
  .modal-button {
-	 color: #7d695e;
+	 color: #06175a;
 	 font-family: "Nunito", sans-serif;
 	 font-size: 18px;
 	 cursor: pointer;
@@ -114,7 +114,7 @@
 	 align-items: center;
 }
  .modal-buttons a {
-	 color: rgba(51, 51, 51, 0.6);
+	 color: rgba(255, 255, 255, 1);
 	 font-size: 14px;
 }
  .sign-up {
@@ -131,13 +131,13 @@
 	 border: 0;
 	 color: #fff;
 	 border-radius: 4px;
-	 background: #8c7569;
+	 background-color: #73747a;
 	 font-family: "Nunito", sans-serif;
 	 transition: 0.3s;
 	 cursor: pointer;
 }
  .input-button:hover {
-	 background: #55311c;
+	 background: #010929;
 }
  .input-label {
 	 font-size: 11px;
@@ -145,7 +145,7 @@
 	 font-family: "Nunito", sans-serif;
 	 font-weight: 600;
 	 letter-spacing: 0.7px;
-	 color: #8c7569;
+	 color: #010c3a;
 	 transition: 0.3s;
 }
  .input-block {
@@ -169,7 +169,7 @@
 	 opacity: 1;
 }
  .input-block:focus-within {
-	 border-color: #8c7569;
+	 border-color: #010c3a;
 }
  .input-block:focus-within .input-label {
 	 color: rgba(140, 117, 105, 0.8);
@@ -194,7 +194,7 @@
 	 flex-direction: column;
 	 align-items: center;
 	 text-align: center;
-	 color: #7d695e;
+	 color: #010c3a;
 	 font-size: 32px;
 	 font-weight: 800;
 	 transform: translate(-50%, -50%);
