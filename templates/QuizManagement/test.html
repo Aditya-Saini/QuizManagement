@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Test For Ques and Answer</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'QuizManagement/test.css' %}">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="popup-form">
+                <h1 id="question"></h1>
+                <label class="container">One
+                  <input type="radio" checked="checked" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Two
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Three
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+                <label class="container">Four
+                  <input type="radio" name="radio">
+                  <span class="checkmark"></span>
+                </label>
+    </div>
+<script>
+    var ques=[];
+    var ans=[],temp=[];
+    var i=0,j=0,k=0;
+    {% for i in fin.ques %}
+        ques[i++]="{{ i }}";
+    {% endfor %}
+    quesh=document.querySelector("#question");
+    quesh.innerHTML=String(ques[0])
+    {% for i in fin.ans %}
+        {%for j in i%}
+            temp[j++]="{{ j }}"
+        {%endfor%}
+        j=0;
+        ans[k++]=temp.slice();
+    {% endfor %}
+
+</script>    
+</body>
+</html>

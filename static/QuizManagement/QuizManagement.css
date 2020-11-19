@@ -1,0 +1,44 @@
+#Rules {
+    text-align : center;
+    font-family:'Baloo Chettan 2', cursive;   
+} 
+h2{
+    font-size: 50px;
+}
+#kbc{
+    font-family:'Baloo Chettan 2', cursive;
+    font-size:90px;
+}
+body{
+    /*background-color: black;*/
+    padding:0;
+    margin:0 0;	
+}
+
+p{
+	font-size:20px;
+	margin:0 0;
+}
+html{
+	margin:0;
+	scroll-behavior: smooth;
+}  
+a{
+	text-decoration: none;
+	padding-right: 6px;
+}
+.demo h1 a{
+	  font-family:'Baloo Chettan 2', cursive;
+}
+
+#name{
+	display:none;
+}
+
+
+.footer{
+    background-color:black;
+    
+    margin-top:15px;
+}
+

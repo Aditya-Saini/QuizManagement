@@ -1,0 +1,78 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz Management</title>
+   
+    <link rel="Stylesheet" type="text/css" href="{% static 'QuizManagement/QuizManagement.css' %}">
+    <link rel="Stylesheet" type="text/css" href="{% static 'QuizManagement/home.css' %}">
+    <link rel="Stylesheet" type="text/css" href="{% static 'QuizManagement/modal.css' %}">
+
+    
+</head>
+<body>
+    <div class=" demo">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+                <h1 class="main-title"><div class="scroll-down">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                  <path d="M16 3C8.832031 3 3 8.832031 3 16s5.832031 13 13 13 13-5.832031 13-13S23.167969 3 16 3zm0 2c6.085938 0 11 4.914063 11 11 0 6.085938-4.914062 11-11 11-6.085937 0-11-4.914062-11-11C5 9.914063 9.914063 5 16 5zm-1 4v10.28125l-4-4-1.40625 1.4375L16 23.125l6.40625-6.40625L21 15.28125l-4 4V9z"/> 
+                </svg></div></h1>
+            </div>
+        </div>
+    </div>
+    <div id="Rules">
+        <h2>Rules</h2>
+        <p>A set of 10 Question will be asked.<br>To complete the game <br>you need to answer atleast 7 question correctly.</p>
+        <h2>Note:</h2>
+        <p>A option selected once will Not be changed<br></p>
+    </div>
+      <div class="modal">
+        <div class="modal-container">
+          <div class="modal-left">
+            <h1 class="modal-title">Welcome!</h1>
+            <p class="modal-desc">Fanny pack hexagon food truck, street art waistcoat kitsch.</p>
+            <div class="input-block">
+              <label for="Name" class="input-label">Name</label>
+              <input type="text" name="name" id="Name" placeholder="Name">
+            </div>
+            <div class="input-block">
+              <label for="Location" class="input-label">Location</label>
+              <input type="text" name="location" id="location" placeholder="Location">
+            </div>
+            <div class="modal-buttons">
+              <a href="" class="">Forgot your password?</a>
+              <a class="input-button" href="{% url 'quiz' %}">Login</a>
+            </div>
+            <p class="sign-up">Don't have an account? <a href="#">Sign up now</a></p>
+          </div>
+          <div class="modal-right">
+            <img src="{% static 'QuizManagement/quiz.jpg' %}" alt="">
+          </div>
+          <button class="icon-button close-button">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+          <path d="M 25 3 C 12.86158 3 3 12.86158 3 25 C 3 37.13842 12.86158 47 25 47 C 37.13842 47 47 37.13842 47 25 C 47 12.86158 37.13842 3 25 3 z M 25 5 C 36.05754 5 45 13.94246 45 25 C 45 36.05754 36.05754 45 25 45 C 13.94246 45 5 36.05754 5 25 C 5 13.94246 13.94246 5 25 5 z M 16.990234 15.990234 A 1.0001 1.0001 0 0 0 16.292969 17.707031 L 23.585938 25 L 16.292969 32.292969 A 1.0001 1.0001 0 1 0 17.707031 33.707031 L 25 26.414062 L 32.292969 33.707031 A 1.0001 1.0001 0 1 0 33.707031 32.292969 L 26.414062 25 L 33.707031 17.707031 A 1.0001 1.0001 0 0 0 32.980469 15.990234 A 1.0001 1.0001 0 0 0 32.292969 16.292969 L 25 23.585938 L 17.707031 16.292969 A 1.0001 1.0001 0 0 0 16.990234 15.990234 z"></path>
+      </svg>
+            </button>
+        </div>
+        <button class="modal-button">Start</button>
+        </div>
+
+    <div class="footer">
+        <h2>Designed By:</h2>
+        <p>Aditya Saini</p>
+    </div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/TweenLite.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/EasePack.min.js"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/499416/demo.js"></script>
+    <script src="{%static 'QuizManagement/TweenMax.js' %}"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="{% static 'QuizManagement/modal.js' %}"></script>
+
+    
+</body>
+</html>
