@@ -11,7 +11,7 @@ $(window).load(function(){
 $(function(){
     jQuery(document).ready(function() {
 		$('body').backstretch([
-	 		 "../../canvas.jpg",
+	 		 "/static/QuizManagement/quiz-background.jpg",
 	 			]);
 		});
 })
