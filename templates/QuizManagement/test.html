@@ -10,18 +10,43 @@
 	<meta name="description" content="">
 
 	<!-- stylesheet css -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="css/templatemo-blue.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="{% static 'QuizManagement/test/css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'QuizManagement/test/css/templatemo-blue.css' %}">
+  <link rel="stylesheet" href="{% static 'QuizManagement/test/css/preloader.css' %}">
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
 
 <!-- preloader section -->
+<div id="overlayer"></div>
 <div class="preloader">
-	<div class="sk-spinner sk-spinner-wordpress">
-       <span class="sk-inner-circle"></span>
-     </div>
+	<div class="book">
+    <div class="inner">
+        <div class="left"></div>
+        <div class="middle"></div>
+        <div class="right"></div>
+    </div>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+  </div>
 </div>
 
 <!-- header section -->
@@ -82,21 +107,6 @@
 		</div>
 	</div>
 </section>
-<section class="container">
-	<div class="row">
-		<div class="col-md-12 col-sm-12">
-			<div class="password">
-            <div class="input-group mb-3">
-                <input type="password" class="form-control" placeholder="Password" id="password">
-                <div class="input-group-append">
-                    <button class="btn btn-outline-dark" type="submit" id="re">Submit</button>
-                </div>
-            </div>
-            <p id="result">ised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of</p>
-            </div>
-        </div>
-    </div>
-</section>
 <!-- footer section -->
 <footer>
 	<div class="container">
@@ -109,10 +119,10 @@
 </footer>
 
 <!-- javascript js -->	
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="{% static 'QuizManagement/test/js/jquery.js' %}""></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-<script src="js/jquery.backstretch.min.js"></script>
-<script src="js/custom.js"></script>
+<script src="{% static 'QuizManagement/test/js/jquery.backstretch.min.js' %}"></script>
+<script src="{% static 'QuizManagement/test/js/custom.js' %}"></script>
 <script>
     var ques=[];
     var ans=[],temp=[];
